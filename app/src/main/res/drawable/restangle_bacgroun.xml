@@ -2,9 +2,9 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-        <corners android:topRightRadius="99966876578556758786756567dp"
-            android:topLeftRadius="999845dp"
-            android:bottomRightRadius="9955dp"
+        <corners android:topRightRadius="6756567dp"
+            android:topLeftRadius="995dp"
+            android:bottomRightRadius="5dp"
             android:bottomLeftRadius="46dp"/>
         <stroke android:width="0dp"/>
         <solid  android:color="@color/duvall"/>

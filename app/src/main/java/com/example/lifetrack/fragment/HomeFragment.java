@@ -36,9 +36,15 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        binding.addFab.setOnClickListener(v -> {
-            Navigation.findNavController(requireView()).navigate(R.id.createTaskFragment);
+        binding.addFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CreateTaskFragment createTaskFragment = new CreateTaskFragment();
+                createTaskFragment.show(requireActivity().getSupportFragmentManager()," ololo");
+
+            }
         });
+            Navigation.findNavController(requireView()).navigate(R.id.createTaskFragment);
         getTask();
     }
 
