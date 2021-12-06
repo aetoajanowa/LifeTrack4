@@ -16,35 +16,34 @@ import com.example.lifetrack.databinding.FragmentBoardFragmentsBinding;
 import com.example.lifetrack.utils.Constants;
 
 public class BoardFragments extends Fragment {
-FragmentBoardFragmentsBinding binding;
+    FragmentBoardFragmentsBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-    binding = FragmentBoardFragmentsBinding.inflate(getLayoutInflater());
+        binding = FragmentBoardFragmentsBinding.inflate(getLayoutInflater());
         return binding.getRoot();
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getPositionFromAdapte();
+        getPositionFromAdapter();
     }
 
-    private void getPositionFromAdapte() {
-        if (getArguments()!=null) {
+    private void getPositionFromAdapter() {
+        if (getArguments()!=null){
             int position = getArguments().getInt(Constants.FRAGMENT_POSITION);
             switch (position){
                 case 0:
                     binding.description.setText("1");
-                break;
+                    break;
                 case 1:
                     binding.description.setText("2");
                     break;
                 case 2:
                     binding.description.setText("3");
                     break;
-
             }
         }
     }

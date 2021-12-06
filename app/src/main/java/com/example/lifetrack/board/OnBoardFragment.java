@@ -29,22 +29,19 @@ public class OnBoardFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstancestate) {
-        super.onViewCreated(view, savedInstancestate);
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
         setupViewPager();
         openHomeFragment();
         isOpenHome();
     }
 
-    private void setupViewPager() {
-        binding.viewpager.setAdapter(new BoardAdapter(requireActivity().getSupportFragmentManager()));
-        binding.dotsIndicator.setViewPager(binding.viewpager);
-    }
-
-
     private void isOpenHome() {
         SharedPreferences sharedPreferences = requireActivity().getSharedPreferences(Constants.BOARD_PREF, Context.MODE_PRIVATE);
         boolean isShow = sharedPreferences.getBoolean(Constants.IS_SHOW_BOARD, false);
+        if (isShow){
+            Navigation.findNavController(requireView()).navigate(R.id.homeFragment);
+        }
     }
 
     private void openHomeFragment() {
@@ -57,6 +54,8 @@ public class OnBoardFragment extends Fragment {
             }
         });
     }
+
+    private void setupViewPager() {
+        binding.viewpager.setAdapter(new BoardAdapter(requireActivity().getSupportFragmentManager()));
+    }
 }
-
-

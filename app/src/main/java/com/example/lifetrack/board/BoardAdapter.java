@@ -19,7 +19,7 @@ public class BoardAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         BoardFragments fragment = new BoardFragments();
         Bundle bundle = new Bundle();
-        bundle.putInt(Constants.FRAGMENT_POSITION,position);
+        bundle.putInt(Constants.FRAGMENT_POSITION, position);
         fragment.setArguments(bundle);
         return fragment;
     }

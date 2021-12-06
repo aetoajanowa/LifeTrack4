@@ -31,7 +31,7 @@
         android:id="@+id/continue_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
+        android:layout_margin="3dp"
         android:background="@drawable/restangle_background_white_button"
         android:padding="9dp"
         android:text="Continue"

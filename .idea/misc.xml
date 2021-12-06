@@ -18,6 +18,7 @@
         <entry key="app/src/main/res/drawable/restangle_background_duxx_button.xml" value="0.3260416666666667" />
         <entry key="app/src/main/res/drawable/restangle_background_red_button.xml" value="0.3260416666666667" />
         <entry key="app/src/main/res/drawable/restangle_background_red_button_1.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/restangle_background_white_button.xml" value="0.30648148148148147" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_auth.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_bloard.xml" value="0.28020833333333334" />
@@ -33,8 +34,9 @@
         <entry key="app/src/main/res/layout/fragment_on_board.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_on_board2.xml" value="0.2942708333333333" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/item_task.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_task.xml" value="0.22" />
         <entry key="app/src/main/res/layout/repeat_dialog.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/repeat_dilog.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/toolbar.xml" value="0.1" />
       </map>
     </option>
